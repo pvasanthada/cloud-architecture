@@ -1,0 +1,17 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Kubernetes Platform" id="kubernetes">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" /><mxCell id="1" parent="0" />
+        <mxCell id="catalog" value="Golden-Path Service Catalog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4285F4;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="380" y="40" width="240" height="50" as="geometry" /></mxCell>
+        <mxCell id="clustergroup" value="Shared Cluster Fleet" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#E8F0FE;fontStyle=1" vertex="1" parent="1"><mxGeometry x="80" y="160" width="440" height="180" as="geometry" /></mxCell>
+        <mxCell id="ns1" value="Namespace: Team A" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="110" y="200" width="170" height="40" as="geometry" /></mxCell>
+        <mxCell id="ns2" value="Namespace: Team B" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="300" y="200" width="170" height="40" as="geometry" /></mxCell>
+        <mxCell id="policy" value="Default-Deny Network Policy + Group RBAC + Resource Quotas" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FBBC04;" vertex="1" parent="1"><mxGeometry x="110" y="270" width="360" height="40" as="geometry" /></mxCell>
+        <mxCell id="dedicated" value="Dedicated PCI-DSS Cluster&#10;(Payments Namespace)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA4335;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="600" y="200" width="240" height="70" as="geometry" /></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="catalog" target="clustergroup"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="catalog" target="dedicated"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,18 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Zero Trust" id="zero-trust">
+    <mxGraphModel dx="800" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" /><mxCell id="1" parent="0" />
+        <mxCell id="req" value="Every Request" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8EAED;" vertex="1" parent="1"><mxGeometry x="40" y="180" width="150" height="50" as="geometry" /></mxCell>
+        <mxCell id="verify" value="Verify: identity,&#10;device posture, context" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FBBC04;" vertex="1" parent="1"><mxGeometry x="250" y="160" width="180" height="90" as="geometry" /></mxCell>
+        <mxCell id="allow" value="Least-privilege access granted" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#34A853;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="500" y="100" width="200" height="50" as="geometry" /></mxCell>
+        <mxCell id="deny" value="Denied, regardless&#10;of network location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EA4335;fontColor=#ffffff;" vertex="1" parent="1"><mxGeometry x="500" y="240" width="200" height="50" as="geometry" /></mxCell>
+        <mxCell id="resource" value="Specific resource,&#10;specific action" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1"><mxGeometry x="770" y="100" width="180" height="50" as="geometry" /></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="req" target="verify"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" value="match" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" parent="1" source="verify" target="allow"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" value="no match" style="edgeStyle=orthogonalEdgeStyle;html=1;fontSize=10;" edge="1" parent="1" source="verify" target="deny"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;html=1;" edge="1" parent="1" source="allow" target="resource"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
